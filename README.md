@@ -6,7 +6,7 @@ Flipbook Vue 3 component
 
 ## Description
 
-This package brings a vue 3 component that displays images in 3D page flip effect. Origin of this component is this repository: `https://github.com/ts1/flipbook-vue`. Original repository provides a component that works nicely in vue 2, but due to errors and bugs in my vue 3 project I had to update it.
+This package brings a vue 3 component that displays images in 3D page flip effect. Origin of this component is this repository: [flipbook-vue](https://github.com/ts1/flipbook-vue). Original repository provides a component that works nicely in vue 2, but due to errors and bugs in my vue 3 project I had to update it.
 
 ## Installation
 
@@ -239,7 +239,7 @@ const pages = ref([])
 
 ## Описание
 
-Этот пакет предоставляет Vue 3 компонент для отображения изображений с 3D-эффектом переворачивания страниц. Первоначальный источник этого компонента: `https://github.com/ts1/flipbook-vue`. Оригинальный репозиторий предоставляет компонент для Vue 2, но из-за ошибок и проблем в моем проекте на Vue 3 мне пришлось обновить его.
+Этот пакет предоставляет Vue 3 компонент для отображения изображений с 3D-эффектом переворачивания страниц. Первоначальный источник этого компонента: [flipbook-vue](https://github.com/ts1/flipbook-vue). Оригинальный репозиторий предоставляет компонент для Vue 2, но из-за ошибок и проблем в моем проекте на Vue 3 мне пришлось обновить его.
 
 ## Установка
 
