@@ -896,7 +896,6 @@ export default {
           if (auto) this.flipAuto(true);
         });
       });
-
       this.isFlipping = false;
     },
 
@@ -1025,9 +1024,10 @@ export default {
       
       let fixedX;
       let fixedY;
-
+      
       if (zoomAt) {
         const rect = viewport.getBoundingClientRect();
+        
         fixedX = zoomAt.pageX - rect.left;
         fixedY = zoomAt.pageY - rect.top;
       } else {
@@ -1057,8 +1057,7 @@ export default {
           ratio = easeInOut(ratio);
           this.zoom = start + (end - start) * ratio;
           
-          this.scrollLeft = startX + (endX - startX) * ratio;
-          
+          this.scrollLeft = startX + (endX - startX) * ratio;          
           this.scrollTop = startY + (endY - startY) * ratio;
           
           if (t < this.zoomDuration) {
@@ -1069,7 +1068,9 @@ export default {
             this.zoom = zoom;
             this.scrollLeft = endX;
             this.scrollTop = endY;
-            
+            // this.currentCenterOffset = 0;
+            // this.minX = Infinity
+            // this.maxX = -Infinity
           }
         });
       };
@@ -1149,6 +1150,9 @@ export default {
       }
       this.touchStartX = null;
       this.activeCursor = null;
+      this.currentCenterOffset = 0;
+      this.minX = Infinity
+      this.maxX = -Infinity
     },
 
     onTouchStart(ev) {

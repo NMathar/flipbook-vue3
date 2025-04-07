@@ -4,16 +4,23 @@ import FlipBook from '../lib/FlipBook.vue'
 import IconArrow from './components/IconArrow.vue'
 
 // Array of image paths
-const pages = ref([])
+const pages = ref([
+  'https://picsum.photos/id/5/800/500', 
+  'https://picsum.photos/id/15/800/500',
+  'https://picsum.photos/id/25/800/500',
+  'https://picsum.photos/id/35/800/500',
+  'https://picsum.photos/id/45/800/500',
+  'https://picsum.photos/id/55/800/500'
+  ])
 </script>
 
 <template>
   <div class="slider-wrap">
-    <FlipBook v-slot="flipbook" class="flipbook" :pages="pages" :gloss="0" :click-to-zoom="true" alt="Книжка">
-      <button aria-label="Предыдущий" class="flipbook-button button-prev" :class="{'disabled': !flipbook.canFlipLeft}" @click="flipbook.flipLeft">
+    <FlipBook v-slot="flipbook" class="flipbook" :pages="pages" :gloss="0" :click-to-zoom="true" :zooms="[1,2]" alt="Книжка">
+      <button aria-label="Right" class="flipbook-button button-prev" :class="{'disabled': !flipbook.canFlipLeft}" @click="flipbook.flipLeft">
         <IconArrow />
       </button>
-      <button aria-label="Следующий" class="flipbook-button button-next" :class="{'disabled': !flipbook.canFlipRight}" @click="flipbook.flipRight">
+      <button aria-label="Left" class="flipbook-button button-next" :class="{'disabled': !flipbook.canFlipRight}" @click="flipbook.flipRight">
         <IconArrow />
       </button>
     </FlipBook>
