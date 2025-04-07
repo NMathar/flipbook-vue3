@@ -16,11 +16,11 @@ const pages = ref([
 
 <template>
   <div class="slider-wrap">
-    <FlipBook v-slot="flipbook" class="flipbook" :pages="pages" :gloss="0" :click-to-zoom="true" :zooms="[1,2]" alt="Книжка">
-      <button aria-label="Right" class="flipbook-button button-prev" :class="{'disabled': !flipbook.canFlipLeft}" @click="flipbook.flipLeft">
+    <FlipBook v-slot="flipbook" class="flipbook" :pages="pages" :gloss="0" :click-to-zoom="true" :zooms="[1,2]" alt="Book">
+      <button aria-label="Left" class="flipbook-button button-prev" :class="{'disabled': !flipbook.canFlipLeft}" @click="flipbook.flipLeft">
         <IconArrow />
       </button>
-      <button aria-label="Left" class="flipbook-button button-next" :class="{'disabled': !flipbook.canFlipRight}" @click="flipbook.flipRight">
+      <button aria-label="Right" class="flipbook-button button-next" :class="{'disabled': !flipbook.canFlipRight}" @click="flipbook.flipRight">
         <IconArrow />
       </button>
     </FlipBook>
