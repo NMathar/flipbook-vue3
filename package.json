@@ -24,7 +24,8 @@
     "url": "https://github.com/NMathar/flipbook-vue3.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": [
     "Flipbook",
