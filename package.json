@@ -1,5 +1,5 @@
 {
-  "name": "@gladesinger/flipbook-vue3",
+  "name": "@NMathar/flipbook-vue3",
   "private": false,
   "version": "1.0.0",
   "type": "module",
@@ -21,7 +21,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gladesinger/flipbook-vue3.git"
+    "url": "https://github.com/NMathar/flipbook-vue3.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "Flipbook",
