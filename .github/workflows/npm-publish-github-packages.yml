@@ -30,6 +30,7 @@ jobs:
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
+      - run: npm version "${GITHUB_REF#refs/tags/}" --no-git-tag-version
       - run: npm ci
       - run: npm publish --access public
         env:
