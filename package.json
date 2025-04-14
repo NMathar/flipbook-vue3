@@ -1,7 +1,7 @@
 {
   "name": "@nmathar/flipbook-vue3",
   "private": false,
-  "version": "1.0.9",
+  "version": "1.0.10",
   "type": "module",
   "files": ["dist"],
   "main": "./dist/flipbook-vue3.umd.cjs",
