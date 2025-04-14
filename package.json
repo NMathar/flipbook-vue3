@@ -6,9 +6,9 @@
   "files": ["dist"],
   "main": "./dist/flipbook-vue3.umd.cjs",
   "module": "./dist/flipbook-vue3.js",
-  "types": "./dist/lib/main.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/lib/main.d.ts",
       "import": "./dist/flipbook-vue3.js",
       "require": "./dist/flipbook-vue3.umd.js"
     },
