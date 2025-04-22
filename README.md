@@ -169,8 +169,8 @@ Method to zoom out.
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-import FlipBook from '@gladesinger/flipbook-vue3';
-import "@gladesinger/flipbook-vue3/dist/style.css"
+import FlipBook from '@nmathar/flipbook-vue3';
+import "@nmathar/flipbook-vue3/dist/style.css"
 import IconArrow from './components/IconArrow.vue'
 
 // Array of image paths
